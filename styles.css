@@ -1,0 +1,406 @@
+/* =====================
+GLOBAL STYLING
+===================== */
+
+/* NAVIGATION */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #333333;
+}
+
+.navbar {
+    background-color: #333333;
+    padding: 0;
+}
+
+.navbar .nav-link {
+    color: white;
+    padding: 14px 16px;
+}
+
+.navbar .nav-link:hover {
+    background-color: #111111;
+    color: white;
+}
+
+.navbar .nav-link.active {
+    background-color: #1F4E79;
+    color: white;
+    font-weight: bold;
+}
+
+/* PAGE HEADER STYLE */
+.page-header{
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px lightgray;
+}
+
+.page-header h1{
+    color: #1F4E79;
+    margin-bottom: 5px;
+}
+
+.subline{
+    color: #666666;
+    margin-top: 0;
+}
+
+
+
+/* TEXT STYLE */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+}
+
+h1{
+    color: #1F4E79;
+    border-bottom: 3px solid #1F4E79;
+    padding-bottom: 10px;
+}
+
+h2{
+    color: #2f5f8f;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+/* WHITESPACE & COMPPSITION*/
+section{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Line Length & Centering*/
+section{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* IMAGES*/
+img{
+    max-width: 700px;
+    border-radius: 15px;
+}
+
+/* BUTTONS*/
+.btn{
+    background-color: #1F4E79;
+    color: white;
+    border: none;
+}
+
+.btn:hover{
+    background-color: pink;
+    color: white;
+}
+
+
+/* Individual Page Styling*/
+
+/* =====================
+   HOMEPAGE
+   ===================== */
+
+/* Header */
+.page-header{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px lightgray;
+}
+
+.page-header h1{
+    color: #1F4E79;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.fun-header{
+    background-color: #333333;
+    color: white;
+    text-decoration-line: line-through;
+    display: inline-block;
+    margin: 0 0 10px 0;
+    padding: 5px 10px;
+}
+
+/* Introduction */
+.intro-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px lightgray;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.text-container{
+    flex: 1;
+}
+
+/* Profile picture */
+.profile-picture{
+    width: 220px;
+    max-width: 40%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px lightgray;
+}
+
+/* Character Sheet */
+.character-sheet{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 2px 10px lightgray;
+    max-width: 500px;
+    font-size: 1.1rem;
+}
+
+
+/* =====================
+   EXPERIENCE PAGE
+   ===================== */
+/* Timeline*/
+   .timeline {
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #1F4E79;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -38px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #1F4E79;
+    border-radius: 50%;
+}
+
+.timeline .content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px lightgray;
+}
+
+.timeline-item:last-child .content {
+    background-color: #dde7f2;
+}
+
+.timeline-item:last-child::before {
+    background-color: white;
+    border: 4px solid #1F4E79;
+    box-sizing: border-box;
+}
+
+.content-details{
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px solid #b8c9da;
+}
+
+/* Explorer buttons*/
+.job-explorer{
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0px 2px 10px lightgray;
+    max-width: 600px;
+    text-align: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#exp-header{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#exp-display{
+    margin-bottom: 0;
+}
+
+/* =====================
+   EDUCATION PAGE
+   ===================== */
+.education-table{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px lightgray;
+    overflow: hidden;
+}
+
+.table-responsive{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table thead th{
+    background-color: #1F4E79;
+    color: white;
+}
+
+.education-table .table-hover tbody tr:hover > *{
+    background-color: #dde7f2;
+}
+
+/* =====================
+   PROJECTS PAGE
+   ===================== */
+.container-project{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+   .card {
+height: 100%;
+box-shadow: 0px 2px 10px lightgray;
+}
+
+.card-title{
+font-size: 1.4rem;
+}
+
+.card:hover{
+transform: translateY(-5px);
+}
+
+.card-img-top{
+height: 250px;
+object-fit: cover;
+}
+
+/* =====================
+   HOBBIES PAGE
+   ===================== */
+.carousel-item img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.carousel-caption{
+    background-color: rgba(0,0,0,0.65);
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.carousel-caption h2{
+    color: white;
+}
+
+.hobby-carousel{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px lightgray;
+}
+
+/* =====================
+   MOBILE
+   ===================== */
+
+@media screen and (max-width: 600px) {
+
+    /* Navigation */
+    .navbar {
+        padding: 6px 10px;
+    }
+
+    .navbar-toggler {
+        padding: 3px 7px;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar .nav-link {
+        padding: 10px 14px;
+    }
+
+    /* General page width */
+    section {
+        width: calc(100% - 30px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Homepage */
+    .intro-container {
+        flex-direction: column;
+    }
+
+    .profile-picture {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Experience */
+    .timeline {
+        width: calc(100% - 30px);
+        padding-left: 35px;
+    }
+
+    /* Hobbies */
+    .carousel-item img{
+        height: 350px;
+    }
+}
